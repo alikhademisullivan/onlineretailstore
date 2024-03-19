@@ -1,0 +1,32 @@
+{
+  "name": "group-assignment-team-111",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/koBo1vTe)",
+  "main": "index.js",
+  "bin": {
+    "your-app": "server/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "package": "npx pkg package.json -t node14-win-x64,node14-linux-x64,node14-macos-x64 -o online-purchase"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.3",
+    "bcrypt": "^5.1.1",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "pkg-updater": "^1.0.4"
+  },
+  "pkg": {
+    "assets": [
+      "/server/data/*"
+    ]
+  }
+}
